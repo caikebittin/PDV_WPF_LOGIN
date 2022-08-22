@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace PDV_WPF_LOGIN.Back.BackEntities.Models
+namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
 {
     class Login
     {

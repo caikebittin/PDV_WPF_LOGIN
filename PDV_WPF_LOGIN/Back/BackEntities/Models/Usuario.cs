@@ -9,6 +9,6 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Models
         public Guid Cod_Usuario { get; set; }
         public string Nome_Usuario { get; set; }
         public decimal CPF { get; set; }
-        public char Senha_Usuario { get; set; }
+        public string Senha_Usuario { get; set; }
     }
 }
