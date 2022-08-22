@@ -11,18 +11,15 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
         //Propriedades da classe 
         ConexaoSql conexao = new ConexaoSql();
         SqlCommand cmd = new SqlCommand();
-        public string mensagem { get; set; }
-        public string nomeUsuario { get; set; }
-        public decimal cpfUsuario { get; set; }
-        public char Senha_Usuario { get; set; }
+        public string mensagem;
 
         //Construtor da classe 
-        public CadastroUsuario(string Nome_Usuario, decimal CPF, char Senha_Usuario)
+        public CadastroUsuario(string Nome_Usuario, decimal CPF, string Senha_Usuario)
         {
             CadastrarUsuario(Nome_Usuario, CPF, Senha_Usuario);
         }
 
-        public void CadastrarUsuario(string Nome_Usuario, decimal CPF, char Senha_Usuario)
+        public void CadastrarUsuario(string Nome_Usuario, decimal CPF, string Senha_Usuario)
         {
             //Comando SQL
             cmd.CommandText = @"insert into Pessoa (Cod_Usuario, Nome_Usuario, CPF, Senha_Usuario) 
@@ -47,7 +44,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
             catch (SqlException ex)
             {
                 //Mensagem de erro
-                this.mensagem = $"Erro ao se conectar com o banco de dados.\n" + ex;
+                this.mensagem = $"Erro ao conectar-se com o banco de dados.\n" + ex;
             }
         }
     }
