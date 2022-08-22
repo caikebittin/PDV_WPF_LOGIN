@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PDV_WPF_LOGIN.Back.BackEntities.Models
 {
-    class Produtos
+    class Produto
     {
         public int Produto_Cod { get; set; }
         public string Produto_Desc { get; set; }

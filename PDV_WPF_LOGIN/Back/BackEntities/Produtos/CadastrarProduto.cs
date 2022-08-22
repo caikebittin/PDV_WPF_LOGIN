@@ -1,8 +1,10 @@
 ﻿using PDV_WPF_LOGIN.Back.BackEntities.Connection;
 using System;
 using System.Collections.Generic;
+using PDV_WPF_LOGIN.Back.BackEntities.Produtos;
 using System.Data.SqlClient;
 using System.Text;
+using PDV_WPF_LOGIN.Back.BackEntities.Models;
 
 namespace PDV_WPF_LOGIN.Back.BackEntities.Produtos
 {
@@ -31,7 +33,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Produtos
             cmd.Parameters.AddWithValue("@valorvenda", Produto_Valor_Venda);
 
             try
-            {
+            {                
                 //Conectar ao Banco (usando a conexão criada em ConexaoSql.cs)
                 cmd.Connection = conexao.conectar();
                 //Executar comando
