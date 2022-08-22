@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV_WPF_LOGIN", "PDV_WPF_LOGIN\PDV_WPF_LOGIN.csproj", "{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVendas", "..\SistemaVendas\SistemaVendas\SistemaVendas.csproj", "{EA48068F-ECE7-4EE8-818E-DA23286A57CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37} = {A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
