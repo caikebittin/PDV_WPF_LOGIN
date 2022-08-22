@@ -7,7 +7,7 @@ using PDV_WPF_LOGIN.Back.BackEntities.Models;
 namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
 {
     public class LoginUsuario
-    { 
+    {
         //Propriedades da Classe
         public string mensagem = ""; //mensagem vazia se estiver ok
         public bool tem;
@@ -16,7 +16,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
         {
             Login log = new Login();
             tem = log.verificarLogin(Nome_Usuario, Senha_Usuario);
-            if (!log.mensagem.Equals("")) 
+            if (!log.mensagem.Equals(""))
             {
                 this.mensagem = log.mensagem;
             }
@@ -24,12 +24,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Pessoa
 
         }
 
-        public string Cadastrar(string Nome_Usuario, decimal CPF, char Senha_Usuario)
-        {
-            return mensagem;
-        }
-
-        }
-
     }
+
+}
 

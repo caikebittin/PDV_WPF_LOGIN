@@ -16,7 +16,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Models
         public bool verificarLogin(string Nome_Usuario, string Senha_Usuario)
         {
             //Comando SQL
-            cmd.CommandText = @"select * from pessoa where nome = @Nome_Usuario and senha = @Senha_Usuario ";
+            cmd.CommandText = @"select top 1 * from pessoa where nome = @Nome_Usuario and senha = @Senha_Usuario ";
             cmd.Parameters.AddWithValue("@Nome_Usuario", Nome_Usuario);
             cmd.Parameters.AddWithValue("@Senha_Usuario", Senha_Usuario);
 
@@ -30,6 +30,9 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Models
                 {
                     tem = true;
                 }
+                else if (tem == false) {
+                    this.mensagem = "Usuário e senha não encontrados.\n Favor cadastrar o usuário!";
+                }
             }
             catch (SqlException Ex)
             {
@@ -38,11 +41,6 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Models
 
             return tem;
 
-        }
-
-        public string Cadastrar(string Nome_Usuario, decimal CPF, char Senha_Usuario)
-        {
-            return mensagem;
         }
     }
 }
