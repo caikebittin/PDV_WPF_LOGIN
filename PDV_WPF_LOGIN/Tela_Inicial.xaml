@@ -1,0 +1,24 @@
+﻿<Window x:Class="PDV_WPF_LOGIN.Tela_Inicial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PDV_WPF_LOGIN"
+        mc:Ignorable="d"
+        Title="Tela_Inicial"
+        Height="768" 
+        Width="1366"
+        AllowsTransparency="False"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFFFFF"
+        >
+    <Grid>
+        <Border Background="#FFFFFF">
+        </Border>
+        <Image Margin="10,10,1286,672" Stretch="Fill" Source="C:\Users\caike.bittin\source\repos\PDV_WPF_LOGIN\PDV_WPF_LOGIN\Icons/Logo Certo.png" RenderTransformOrigin="1.229,0.971"/>
+        <Label Content="PDV" Margin="85,6,1175,672" FontSize="50" Foreground="#005D8B"/>
+
+
+    </Grid>
+    
+</Window>
