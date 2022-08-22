@@ -72,16 +72,16 @@
     <Grid>
         <Border Background="#FFFFFF" CornerRadius="6,6,6,6"
             >
-            <Image Margin="175,28,175,272" Stretch="Fill" Source="C:\Users\caike.bittin\source\repos\PDV_WPF_LOGIN\PDV_WPF_LOGIN\Icons/Logo certo.png"/>
+
         </Border>
+        <Image Margin="175,28,175,272" Stretch="Fill" Source="C:\Users\caike.bittin\source\repos\PDV_WPF_LOGIN\PDV_WPF_LOGIN\Icons/Logo certo.png"/>
         <TextBox TextWrapping="Wrap" Margin="58,172,58,198" FontSize="20" FontFamily="Arial" Height="30"/>
         <PasswordBox Margin="58,234,58,136"/>
         <CheckBox x:Name="checkBox_showPassword" Margin="318,269,58,116" Content="Ver Senha" RenderTransformOrigin="0.959,0.652"/>
         <Label Content="Senha:" FontSize="20" Margin="55,201,289,159" Foreground="#005D8B"/>
-        <Button Style="{DynamicResource Button_Login}" Content="Login" Margin="58,299,243,64" Background="#005D8B" Foreground="#FFFFFF" FontSize="18" FontFamily="Arial"/>
-        <Button Style="{DynamicResource Button_Login}" Content="Cancelar" Margin="243,299,58,64" Background="#005D8B" Foreground="#FFFFFF" FontSize="18" FontFamily="Arial" Click="Button_Click"/>
+        <Button x:Name="Button_Login" Style="{DynamicResource Button_Login}" Content="Login" Margin="58,299,243,64" Background="#005D8B" Foreground="#FFFFFF" FontSize="18" FontFamily="Arial" Click="Button_Login_Click"/>
+        <Button x:Name="Button_Cancelar" Style="{DynamicResource Button_Login}" Content="Cancelar" Margin="243,299,58,64" Background="#005D8B" Foreground="#FFFFFF" FontSize="18" FontFamily="Arial" Click="Button_Cancelar_Click"/>
         <Label Content="Usuário:" FontSize="20" Margin="55,138,289,222" Foreground="#005D8B"/>
-
 
     </Grid>
 </Window>

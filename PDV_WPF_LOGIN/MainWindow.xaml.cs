@@ -24,10 +24,16 @@ namespace PDV_WPF_LOGIN
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void btn_Login()
         {
 
         }
+        private void Button_Login_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Cancelar_Click(object sender, RoutedEventArgs e) => this.Close();
+        
     }
 }

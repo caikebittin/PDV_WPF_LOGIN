@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV_WPF_LOGIN", "PDV_WPF_LOGIN\PDV_WPF_LOGIN.csproj", "{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVendas", "..\SistemaVendas\SistemaVendas\SistemaVendas.csproj", "{EA48068F-ECE7-4EE8-818E-DA23286A57CD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63D8DD2-67E5-4BE4-8146-272AF6CC3B37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA48068F-ECE7-4EE8-818E-DA23286A57CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA48068F-ECE7-4EE8-818E-DA23286A57CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA48068F-ECE7-4EE8-818E-DA23286A57CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA48068F-ECE7-4EE8-818E-DA23286A57CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
