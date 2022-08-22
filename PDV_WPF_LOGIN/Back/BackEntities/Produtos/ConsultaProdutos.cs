@@ -16,7 +16,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Produtos
         public bool consultarProdutos(int Produto_Cod, string Produto_Desc)
         {
             //Comando SQL
-            cmd.CommandText = @"select top 1 * from Produtos where Produto_Cod = @cod and Produto_Desc = @descr ";
+            cmd.CommandText = @"select * from Produtos where Produto_Cod = @cod and Produto_Desc = @descr";
             cmd.Parameters.AddWithValue("@cod", Produto_Cod);
             cmd.Parameters.AddWithValue("@descr", Produto_Desc);
 

@@ -22,8 +22,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Produtos
         public void CadastroProduto(int Produto_Cod, string Produto_Desc, decimal Produto_Custo, decimal Produto_Valor_Venda)
         {
             //Comando SQL
-            cmd.CommandText = @"insert into Produtos (Produto_Cod, Produto_Desc, Produto_Custo, Produto_Valor_Venda) 
-                                values (@cod, @descr, @custo, @valorvenda)";
+            cmd.CommandText = @"insert into Produtos (Produto_Cod, Produto_Desc, Produto_Custo, Produto_Valor_Venda) values (@cod, @descr, @custo, @valorvenda)";
 
             //Parametros
             cmd.Parameters.AddWithValue("@cod", Produto_Cod);
