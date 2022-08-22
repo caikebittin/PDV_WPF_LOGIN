@@ -33,8 +33,7 @@ namespace PDV_WPF_LOGIN.Back.BackEntities.Produtos
             cmd.Parameters.AddWithValue("@valorvenda", Produto_Valor_Venda);
 
             try
-            {                
-                //Conectar ao Banco (usando a conexão criada em ConexaoSql.cs)
+            {   //Conectar ao Banco (usando a conexão criada em ConexaoSql.cs)
                 cmd.Connection = conexao.conectar();
                 //Executar comando
                 cmd.ExecuteNonQuery();
